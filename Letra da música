@@ -1,0 +1,54 @@
+/*Este programa impreme a letra da minha música favorita
+    criador: Laryssa Ribeiro
+    data:24/01/2026
+    */
+   #include <stdio.h>
+   #include <stdlib.h>
+
+   int main(){;
+
+      // estrofe 1   
+      printf("\t-Snuff-\n\n");
+      printf("\tBury all your secrets in my skin\n");
+      printf("\tCome away with innocence, and leave me with my sins\n0");
+      printf("\tThe air around me still feels like a cage\n");
+      printf("\tAnd love is just a camouflage for what resembles rage again\n\n");
+      // estrofe 2
+      printf("\tSo, if you love me, let me go\n");
+      printf("\tAnd run away before I know\n");
+      printf("\tMy heart is just too dark to care\n");
+      printf("\tI can't destroy what isn't there\n");
+      printf("\tDeliver me into my fate\n");
+      printf("\tIf I'm alone I cannot hate\n");
+      printf("\tI don't deserve to have you\n");
+      printf("\tOoh, my smile was taken long ago\n");
+      printf("\tIf I can change I hope I never know\n\n");
+      // estrofe 3
+      printf("\tI still press your letters to my lips\n");
+      printf("\tAnd cherish them in parts of me that savor every kiss\n");
+      printf("\tI couldn't face a life without your light (without your light)\n");
+      printf("\tBut all of that was ripped apart when you refused to fight\n\n");
+      // estrofe 4
+      printf("\tSo, save your breath, I will not hear\n");
+      printf("\tI think I made it very clear\n");
+      printf("\tYou couldn't hate enough to love\n");
+      printf("\tIs that supposed to be enough?\n");
+      printf("\tI only wish you weren't my friend\n");
+      printf("\tThen I could hurt you in the end\n");
+      printf("\tI never claimed to be a saint\n");
+      printf("\tOoh, my own was banished long ago\n");
+      printf("\tIt took the death of hope to let you go\n\n");
+      //estrofe 5
+      printf("\tSo, break yourself against my stones\n");
+      printf("\tAnd spit your pity in my soul\n");
+      printf("\tYou never needed any help\n");
+      printf("\tYou sold me out to save yourself\n");
+      printf("\tAnd I won't listen to your shame\n");
+      printf("\tYou ran away, you're all the same\n");
+      printf("\tAngels lie to keep control\n");
+      printf("\tOoh, my love was punished long ago\n");
+      printf("\tIf you still care, don't ever let me know\n");
+      printf("\tIf you still care, don't ever let me know\n");
+
+      return 0;
+   }
