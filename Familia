@@ -1,0 +1,20 @@
+/*Esse programa imprime o meu nome e o nome das pessoas que moram comigo.
+   Criador: Laryssa Ribeiro
+   25/01/2026*/
+   #include <stdio.h>
+   #include <stdlib.h>
+
+   int main(){
+
+      char mae[10] = "Marinalva";
+      char pai[8] = "Luciano";
+      char irma[8] = "Rhayane";
+      char eu[8] = "Laryssa";
+
+      printf("Minha mae se chama %s\n", mae);
+      printf("Meu pai se chama %s\n", pai);
+      printf("Minha irma se chama %s\n", irma);
+      printf("Eu me chamo %s\n", eu);
+
+      return 0;
+   }
