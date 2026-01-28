@@ -1,0 +1,17 @@
+/* Crie um programa que contenha duas variáveis inteiras. Some o valor das variáveis, 
+armazene em uma terceira variável e exiba-a
+criador: Larysa Ribeiro
+Data: 27/01/2026*/
+
+#include <stdio.h>
+
+int main(){
+
+   int num1 = 3;
+   int num2 = 7;
+   int soma = num1 + num2;
+
+   printf("Soma: %d", soma);
+
+   return 0;
+}
