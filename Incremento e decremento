@@ -1,0 +1,24 @@
+/* Solicite ao usuário um valor inteiro. Crie duas outras variáveis: A primeira, deve 
+conter um número a menos que a variável principal, a segunda, deve conter um número a 
+mais em relação a variável principal. Utilize subtração e soma para chegar a esses 
+valores. Exiba ao final, as três variáveis
+criador: Larysa Ribeiro
+Data: 27/01/2026*/
+
+#include <stdio.h>
+
+int main(){
+
+   int principal;
+   int var1;
+   int var2;
+   printf("Digite um numero inteiro:"); //solicita que o usuario digite um numero
+   scanf("%d", &principal); //guarda o numero digitado pelo usuario
+
+   int var1 = principal - 1; // subtrai no numero digitado em 1
+   int var2= principal + 1; // soma no numero digitado em 1
+
+   printf("Numero depois do decremento em 1: %d\n", var1); //imprime o resultado 
+   printf("Numero depois do incremento em 1: %d\n", var2 ); // imprime o resultado
+
+   return 0;
