@@ -1,0 +1,17 @@
+/*Crie um programa que contenha duas variáveis inteiras. Multiplique o valor das 
+variáveis, armazene em uma terceira variável e exiba-a
+criador: Larysa Ribeiro
+Data: 27/01/2026*/
+
+#include <stdio.h>
+
+int main(){
+
+   int num1 = 6;
+   int num2 = 6;
+   int mult = num1 * num2;
+
+   printf("Multiplicacao: %d", mult);
+
+   return 0;
+}
