@@ -1,0 +1,27 @@
+/* Solicite ao usuário que digite dois números inteiros e armazene-os em duas 
+variáveis. Troque os valores entre as variáveis. Isso é, a variável que recebeu o primeiro 
+número, deve passar a ter o valor informado para a primeira e vice-versa. Se necessário, 
+crie variáveis auxiliares. Exiba ao final.
+Criador: Laryssa Ribeiro
+Data: 31/01/2026*/
+
+#include <stdio.h>
+
+int main(void){
+
+   int numero1, numero2, auxiliar;
+
+      printf(" Digite dois numeros inteiros:");//solicita ao usuario
+      scanf("%d %d", &numero1, &numero2);//le e armazena
+
+   auxiliar = numero1;
+   numero1 = numero2;
+   numero2 = auxiliar;
+
+      printf("Numeros com valores invertidos:\n");
+      printf("%d\n", numero1);
+      printf("%d\n", numero2);
+
+
+   return 0;
+}
