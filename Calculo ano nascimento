@@ -1,0 +1,48 @@
+/*  Solicite do usuário a idade dele, de sua mãe, do seu pai e de seus dois irmãos. Exiba o ano de 
+nascimento de cada um. Considere o ano atual como parâmetro para seu cálculo.
+Criador: Laryssa Ribeiro
+Data: 31/01/2026*/
+
+#include <stdio.h>
+
+int main(void){
+
+   int idade_mae, idade_pai, idade_irmao1, idade_irmao2, idade_usuario, ano_atual;
+   int anomae, anopai, anoirmao1, anoirmao2, anousuario;
+
+   printf("Digite o ano atual:");
+   scanf("%d", &ano_atual);
+
+   printf("Digite a idade de sua mae:");
+   scanf("%d", &idade_mae);
+   
+   printf("Digite a idade do seu pai:");
+   scanf("%d", &idade_pai);
+
+   printf("Digite a idade do seu primeiro irmao:");
+   scanf("%d", &idade_irmao1);
+
+   printf("Digite a idade do seu segundo irmao:");
+   scanf("%d", &idade_irmao2);
+
+   printf("Digite sua idade:");
+   scanf("%d", &idade_usuario);
+
+   anomae = ano_atual - idade_mae;
+   anopai = ano_atual - idade_pai;
+   anoirmao1 = ano_atual - idade_irmao1;
+   anoirmao2 = ano_atual - idade_irmao2;
+   anousuario = ano_atual - idade_usuario;
+
+   printf("\nSua mae nasceu em: %d\n", anomae);
+
+   printf("Seu pai nasceu em: %d\n", anopai);
+
+   printf("Seu primeiro irmao nasceu em: %d\n", anoirmao1);
+
+   printf("Seu segundo irmao nasceu em: %d\n", anoirmao2);
+
+   printf("voce nasceu: %d\n", anousuario);
+
+   return 0;
+}
