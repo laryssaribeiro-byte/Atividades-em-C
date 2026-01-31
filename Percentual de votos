@@ -1,0 +1,40 @@
+/* Crie um programa para ler o número total de eleitores de um município, o número de 
+votos brancos, nulos e válidos. Calcule e escreva na tela o percentual que cada um 
+representa em relação ao total de eleitores. 
+Criador: Laryssa Ribeiro
+Data: 31/01/2026*/
+
+#include <stdio.h>
+
+int main(void){
+
+   float brancos, nulos, validos;
+   float percbrancos, percnulos, percvalidos;
+   int total;
+
+
+   printf("Votos brancos:");
+   scanf("%f", &brancos);
+
+   printf("Votos nulos:");
+   scanf("%f", &nulos);
+
+   printf("Votos validos:");
+   scanf("%f", &validos);
+
+   total = (nulos + brancos + validos); 
+
+   printf("Total de votos: %.d\n", total);
+
+   percbrancos = (brancos / total) * 100;
+   percnulos = (nulos / total) * 100;
+   percvalidos = (validos / total) * 100;
+
+   printf("O percetual de votos brancos em relacao ao total e: %.2f%%\n", percbrancos);
+
+   printf("O percentual de votos nulos em relacao ao total e: %.2f%%\n", percnulos);
+
+   printf("O percentual de votos validos em relacao ao total e: %.2f%%\n", percvalidos);
+   
+   return 0;
+}
