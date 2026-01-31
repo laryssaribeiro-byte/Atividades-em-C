@@ -1,0 +1,22 @@
+/*  Crie um programa capaz de calcular e exibir a área de um triângulo retângulo 
+Base x Altura / por 2
+Criador: Laryssa Ribeiro
+Data: 31/01/2026*/
+
+#include <stdio.h>
+
+int main(void){
+
+   int base, altura, area;
+
+   printf("Digite a Base do triangulo retangulo:");
+   scanf("%d", &base);
+   printf("Digite a altura do triangulo retangulo");
+   scanf("%d", &altura);
+
+   area = (base*altura) / 2;
+
+   printf("A area do triangulo retangulo e: %d\n", area);
+
+   return 0;
+}
