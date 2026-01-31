@@ -1,0 +1,20 @@
+/* Crie um programa no qual o usuário informará o total do seu salário e você o 
+informará sua comissão. A comissão corresponde a 10% do salário do funcionário.
+Criador: Laryssa Ribeiro
+Data: 31/01/2026*/
+
+#include <stdio.h>
+
+int main(void){
+
+   float salario, comissao;
+
+   printf("Infome o seu salario:");
+   scanf("%f", &salario);
+
+   comissao = salario * 0.10;
+
+   printf("O valor da sua comissao e: %.2f\n", comissao);
+   
+   return 0;
+}
