@@ -1,0 +1,19 @@
+/* Crie um programa capaz de possibilitar ao usuário preencher uma variável inteira. 
+Exiba essa variável na tela.
+Criador: Laryssa Ribeiro
+Data: 31/01/2026*/
+
+#include <stdio.h>
+
+int main(void){
+
+   int var;
+
+   printf("Digite um numero inteiro:");
+   scanf("%d", &var); //le o numero digitado pelo usuario e armazena na variavel var
+   system("cls");
+
+   printf("O valor digitado foi:%d", var); //imprime na tela o valor digitado
+
+   return 0;
+}
