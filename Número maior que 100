@@ -1,0 +1,28 @@
+/*Crie um programa capaz de receber três números reais. Caso a soma dos números
+ultrapassar 100 exiba ao usuário a seguinte mensagem: “Valor inválido”. Do contrário,
+exiba: “Valor aceito”.
+Criador: Laryssa Ribeiro
+Data: 03/02/2026*/
+
+#include <stdio.h>
+
+int main(void)
+{
+   float num1, num2, num3, soma;
+
+   printf("Digite tres numeros reais:\n");
+   scanf("%f\n %f\n %f", &num1, &num2, &num3);
+
+   soma = (num1 + num2 + num3);
+
+   if (soma > 100.0)
+   {
+      printf("Valor invalido");
+   }
+   else
+   {
+      printf("Valor aceito");
+   }
+
+   return 0;
+}
