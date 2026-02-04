@@ -1,0 +1,41 @@
+/*Este programa le tres valores e imprime se eles formam um triangulo,
+e de que tipo: isoceles, equilatero ou escaleno.
+Criador:Laryssa Ribeiro
+Data 03/02/2026*/
+
+#include <stdio.h>
+
+int main(void)
+{
+    int a, b, c; // lados do triangulo
+    printf("Informe os 3 valores");
+    scanf("%d\n %d\n %d", &a, &b, &c);
+
+    // Verificar se o triangulo e valido
+
+    if ((a < b + c) && (b < a + c) && (c < a + b && (a > 0) && (b > 0) && (c > 0)))
+    {
+        // triangulo e valido
+        //  verificar o tipo do triangulo
+
+        // verificando se e equilatero
+        if ((a == b) && (b == c))
+        {
+            printf("Os lados formam um triangulo equilatero.");
+        }
+        else if ((a != b) && (b != c) && (a != c))
+        {
+            // triangulo e escaleno
+            printf("Os lados formam um triangulo escaleno");
+        }
+        else
+        {
+            printf("os lados formam um triangulo isoceles");
+        }
+    }
+    else
+    {
+        printf("Os lados nao formam um triangulo");
+    }
+    return 0;
+}
