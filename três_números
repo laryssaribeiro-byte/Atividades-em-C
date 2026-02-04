@@ -1,0 +1,44 @@
+/*Crie um programa que pergunte ao usuário três números: Exiba as seguintes
+informações:
+a) Os números são maiores que zero?
+b) O primeiro número é maior que o último?
+c) O segundo número é maior que o último?
+Criador: Laryssa Ribeiro
+Data: 04/02/2026*/
+
+#include <stdio.h>
+
+int main(void)
+{
+   int num1, num2, num3;
+
+   printf("Digite tres numero:\n");
+   scanf("%d %d %d", &num1, &num2, &num3);
+
+   if ((num1 > 0) && (num2 > 0) && (num3 > 0))
+   {
+      printf("Os numeros sao maiores que zero\n");
+   }
+   else
+   {
+      printf("nao sao maiores que zero\n");
+   }
+   if (num1 > num3)
+   {
+      printf("o primeiro numero e maior que o ultimo\n");
+   }
+   else
+   {
+      printf("O primeiro numero nao e maior que o ultimo\n");
+   }
+   if (num2 > num3)
+   {
+      printf("O segundo numero e maior que o ultimo\n");
+   }
+   else
+   {
+      printf("O segundo numero nao e maior que o ultimo\n");
+   }
+
+   return 0;
+}
