@@ -1,0 +1,45 @@
+/*Crie um programa que recebe um número inteiro e informe os seguintes dados:
+a) O número é maior que zero?
+b) O número é ímpar ou par?
+c) O número é múltiplo de 3?
+Criador: Laryssa Ribeiro
+Data: 04/02/2026*/
+
+#include <stdio.h>
+
+int main(void)
+{
+   int num;
+
+   printf("Digite um numero\n");
+   scanf("%d", &num);
+
+   if (num > 0)
+   {
+      printf("O numero e maior que zero\n");
+   }
+   else
+   {
+      printf("O numero nao e maior que zero\n");
+   }
+
+   if (num % 2 == 0)
+   {
+      printf("E par\n");
+   }
+   else
+   {
+      printf("E impar\n");
+   }
+
+   if (num % 3 == 0)
+   {
+      printf("O numero e multiplo de 3\n");
+   }
+   else
+   {
+      printf("O numero nao e multiplo de 3\n");
+   }
+
+   return 0;
+}
