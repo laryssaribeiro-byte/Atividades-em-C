@@ -1,0 +1,59 @@
+/* Crie um programa que receba a altura de uma pessoa em centímetros e o peso em
+quilos. Exiba o IMC e o índice de peso do sujeito conforme a tabela abaixo:
+O IMC é calculado pela seguinte fórmula:
+IMC = peso em kg / (altura em metros * altura em metros)
+Criador: Laryssa Ribeiro
+Data: 04/02/2026*/
+
+#include <stdio.h>
+
+int main(void)
+{
+
+   float altura, peso, imc;
+
+   printf("digite seu peso em kilos\n");
+   scanf("%f", &peso);
+
+   printf("digite sua altura em centimetros\n");
+   scanf("%f", &altura);
+
+   altura = altura / 100;
+   imc = peso / (altura*altura);
+
+   if (imc < 15.0)
+   {
+      printf("Extremamente abaixo do peso");
+   }
+   else if ((imc >= 15.0) && (imc <= 15.99))
+   {
+      printf("Gravemente abaixo do peso");
+   }
+   else if ((imc >= 16.0) && (imc <= 18.4))
+   {
+      printf("Abaixo o peso ideal");
+   }
+   else if ((imc >= 18.5) && (imc <= 24.99))
+   {
+      printf("Faixa de peso ideal");
+   }
+   else if ((imc >= 25.0) && (imc <= 29.99))
+   {
+      printf("Sobrepeso");
+   }
+   else if ((imc >= 30.0) && (imc <= 34.99))
+   {
+      printf("Obesidade grau I");
+   }
+   else if ((imc >= 35.0) && (imc <= 39.99))
+   {
+      printf("Obesidade grau II (grave)");
+   }
+   else
+   {
+      printf("Obesidade grau III (morbida)");
+   }
+
+
+   return 0;
+}
