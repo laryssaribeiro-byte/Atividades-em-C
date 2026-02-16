@@ -1,0 +1,49 @@
+/*01 – Crie um programa para classificar as seções de um supermercado. O usuário deve
+informar um código de 5 itens e você exibe a qual seção esse código corresponde.
+Código Seção
+1      Frios
+2      Material de Limpeza
+3      Padaria
+4      Biscoitos e cereais
+5      Higiene pessoal
+Criador: Laryssa Ribeiro
+Data: 16/02/2026*/
+
+#include <stdio.h>
+
+int main(void)
+{
+    int codigo;
+
+    printf("Digite o codigo correspondente a secao\n");
+    printf("\tCodigo\t Secao\n");
+    printf("\t1\t Frios\n");
+    printf("\t2\t Material de limpeza\n");
+    printf("\t3\t Padaria\n");
+    printf("\t4\t Biscoito e cereais\n");
+    printf("\t5\t higiene pessoal\n");
+    scanf("%d", &codigo);
+
+    switch (codigo)
+    {
+    case 1:
+        printf("Frios\n");
+        break;
+    case 2:
+        printf("Material de limpeza\n");
+        break;
+    case 3:
+        printf("Padaria\n");
+        break;
+    case 4:
+        printf("Biscoito e cereais\n");
+        break;
+    case 5:
+        printf("Higiene pessoal\n");
+        break;
+    default:
+        printf("A valor digitado esta invalido. tente novamente.");
+
+        return 0;
+    }
+}
