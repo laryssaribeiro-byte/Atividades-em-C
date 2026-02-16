@@ -1,0 +1,128 @@
+/*02 – Durante a corrida anual de carneiros de Massachusetts do Oeste em MG, a 
+prefeitura disponibiliza um cardápio de lanches servidos aos visitantes.
+Crie um programa que peça para o usuário informar um código de três lanches 
+diferentes. Ao final, exiba o valor total a ser pago. Se o usuário informar um código 
+inválido, avise-o.
+Código Lanche                            Valor
+1001   Bolo de Chocolate com Maionese    R$ 3,50
+1002   Nescau com água e salsinha        R$ 1,50
+1003   Toddy com água e cebolinha        R$ 1,50
+1004   Pão de cachorro quente com feijão R$ 1,25
+1005   Sorvete com macarronada           R$ 6,80
+1006   Churrasquinho com açúcar mascavo  R$ 2,99
+Criador: Laryssa Ribeiro
+Data: 16/02/2026*/
+
+#include <stdio.h>
+
+int main(void)
+{
+    float cod1001 = 3.50, cod1002 = 1.50, cod1003 = 1.50, cod1004 = 1.25, cod1005 = 6.80, cod1006 = 2.99;
+    float total = 0;
+    int cod1, cod2, cod3;
+
+    printf("            ----Cardapio----\n");
+    printf("\tCodigo\t Lanche\t\t                           Valor\n");
+    printf("\t1001\t Bolo de Chocolate com Maionese\t\t R$ 3,50\n");
+    printf("\t1002\t Nescau com agua e salsinha\t\t R$ 1,50\n");
+    printf("\t1003\t Toddy com agua e cebolinha\t\t R$ 1,50\n");
+    printf("\t1004\t Pao de cachorro quente com feijao\t R$ 1,25\n");
+    printf("\t1005\t Sorvete com macarronada\t\t R$ 6,80\n");
+    printf("\t1006\t Churrasquinho com acucar mascavo\t R$ 2,99\n");
+
+    printf("digite 3 codigos dos lanches desejados\n");
+    scanf("%d %d %d", &cod1, &cod2, &cod3);
+
+    switch (cod1)
+    {
+    case 1001:
+        printf("Bolo de Chocolate com Maionese R$ %.2f\n", cod1001);
+        total += cod1001;
+        break;
+    case 1002:
+        printf("Nescau com agua e salsinha R$ %.2f\n", cod1002);
+        total += cod1002;
+        break;
+    case 1003:
+        printf("Toddy com agua e cebolinha R$ %.2f\n", cod1003);
+        total += cod1002;
+        break;
+    case 1004:
+        printf("Pao de cachorro quente com feijao R$ %.2f\n", cod1004);
+        total += cod1002;
+        break;
+    case 1005:
+        printf("Sorvete com macarronada R$ %.2f\n", cod1005);
+        total += cod1002;
+        break;
+    case 1006:
+        printf("Churrasquinho com acucar mascavo R$ %.2f\n", cod1006);
+        total += cod1002;
+        break;
+    default:
+        printf("Codigo incorreto. Tente novamente");
+    }
+
+    switch (cod2)
+    {
+    case 1001:
+        printf("Bolo de Chocolate com Maionese R$ %.2f\n", cod1001);
+        total += cod1002;
+        break;
+    case 1002:
+        printf("Nescau com agua e salsinha R$ %.2f\n", cod1002);
+        total += cod1002;
+        break;
+    case 1003:
+        printf("Toddy com agua e cebolinha R$ %.2f\n", cod1003);
+        total += cod1002;
+        break;
+    case 1004:
+        printf("Pao de cachorro quente com feijao R$ %.2f\n", cod1004);
+        total += cod1002;
+        break;
+    case 1005:
+        printf("Sorvete com macarronada R$ %.2f\n", cod1005);
+        total += cod1002;
+        break;
+    case 1006:
+        printf("Churrasquinho com acucar mascavo R$ %.2f\n", cod1006);
+        total += cod1002;
+        break;
+    default:
+        printf("Codigo incorreto. Tente novamente");
+    }
+
+    switch (cod3)
+    {
+    case 1001:
+        printf("Bolo de Chocolate com Maionese R$ %.2f\n", cod1001);
+        total += cod1002;
+        break;
+    case 1002:
+        printf("Nescau com agua e salsinha R$ %.2f\n", cod1002);
+        total += cod1002;
+        break;
+    case 1003:
+        printf("Toddy com agua e cebolinha R$ %.2f\n", cod1003);
+        total += cod1002;
+        break;
+    case 1004:
+        printf("Pao de cachorro quente com feijao R$ %.2f\n", cod1004);
+        total += cod1002;
+        break;
+    case 1005:
+        printf("Sorvete com macarronada R$ %.2f\n", cod1005);
+        total += cod1002;
+        break;
+    case 1006:
+        printf("Churrasquinho com acucar mascavo R$ %.2f\n", cod1006);
+        total += cod1002;
+        break;
+    default:
+        printf("Codigo incorreto. Tente novamente");
+    }
+
+    printf("\nO total do seu lanche foi R$ %.2f reais", total);
+    return 0;
+}
