@@ -1,0 +1,15 @@
+/*Crie um programa capaz de exibir os números de 1 a 100
+Criador: Laryssa Ribeiro
+Data: 01/03/2026*/
+
+#include <stdio.h>
+
+int main(void)
+{
+    int n;
+
+    for(n = 0; n <= 100; n++)
+        printf("%d ", n);
+
+    return 0;
+}
