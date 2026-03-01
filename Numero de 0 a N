@@ -1,0 +1,18 @@
+/*Crie um programa no qual o usuário informa um número, exiba todos os números 
+entre 0 e o número digitado.
+Criador: Laryssa Ribeiro
+Data: 01/03/2026*/
+
+#include <stdio.h>
+
+int main(void)
+{
+    int n, i;
+
+    printf("Informe um numero.");
+    scanf("%d", &n);
+
+    for(i = 0; i <= n; i++)
+    printf("%d ", i);
+    return 0;
+}
